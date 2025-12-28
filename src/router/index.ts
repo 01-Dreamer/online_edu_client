@@ -33,21 +33,27 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
-    path: '/mine',
-    name: 'mine',
-    component: () => import('@/views/MineView.vue'),
+    path: '/count',
+    name: 'count',
+    component: () => import('@/views/CountView.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/notice',
+    name: 'notice',
+    component: () => import('@/views/NoticeView.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/space',
+    name: 'space',
+    component: () => import('@/views/SpaceView.vue'),
     meta: { requiresAuth: true }
   },
   {
     path: '/video',
     name: 'video',
     component: () => import('@/views/VideoView.vue'),
-    meta: { requiresAuth: true }
-  },
-  {
-    path: '/count',
-    name: 'count',
-    component: () => import('@/views/CountView.vue'),
     meta: { requiresAuth: true }
   },
   {

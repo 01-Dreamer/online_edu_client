@@ -2,28 +2,28 @@
   <div class="nav-header">
     <el-image src="/favicon.ico" class="brand-logo" alt="online-edu" />
     <ul class="nav">
-      <router-link class="link" to="/" active-class="active">
+      <router-link class="link" :to="{ name: 'home' }" active-class="active">
         <el-tooltip content="首页" placement="bottom" effect="dark">
           <li>
             <el-icon><HomeFilled /></el-icon>
           </li>
         </el-tooltip>
       </router-link>
-      <router-link class="link" to="/courses" active-class="active">
+      <router-link class="link" :to="{ name: 'course' }" active-class="active">
         <el-tooltip content="课程" placement="bottom" effect="dark">
           <li>
             <el-icon><Reading /></el-icon>
           </li>
         </el-tooltip>
       </router-link>
-      <router-link class="link" to="/stats" active-class="active">
+      <router-link class="link" :to="{ name: 'count' }" active-class="active">
         <el-tooltip content="统计" placement="bottom" effect="dark">
           <li>
             <el-icon><Histogram /></el-icon>
           </li>
         </el-tooltip>
       </router-link>
-      <router-link class="link" to="/notice" active-class="active">
+      <router-link class="link" :to="{ name: 'notice' }" active-class="active">
         <el-tooltip content="通知" placement="bottom" effect="dark">
           <li>
             <el-badge is-dot class="badge-item">
@@ -32,7 +32,7 @@
           </li>
         </el-tooltip>
       </router-link>
-      <router-link class="link" to="/mine" active-class="active">
+      <router-link class="link" :to="{ name: 'space' }" active-class="active">
         <el-tooltip content="我的" placement="bottom" effect="dark">
           <li>
             <el-image 
