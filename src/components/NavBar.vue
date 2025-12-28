@@ -32,7 +32,7 @@
           </li>
         </el-tooltip>
       </router-link>
-      <router-link class="link" :to="{ name: 'space' }" active-class="active">
+      <router-link class="link" :to="{ name: 'profile', params: { id: 1 } }" active-class="active">
         <el-tooltip content="我的" placement="bottom" effect="dark">
           <li>
             <el-image 

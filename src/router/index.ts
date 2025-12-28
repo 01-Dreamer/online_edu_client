@@ -45,9 +45,15 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
-    path: '/space',
-    name: 'space',
-    component: () => import('@/views/SpaceView.vue'),
+    path: '/profile/:id',
+    name: 'profile',
+    component: () => import('@/views/ProfileView.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import('@/views/AdminView.vue'),
     meta: { requiresAuth: true }
   },
   {
